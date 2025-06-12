@@ -4,8 +4,8 @@ import pickle
 import os.path
 
 from src.neural_networks.moe_inspired_vae import MoeInspiredVAE
+from src.neural_networks.vae_nn import VAENN
 from src.support import utils
-from src.nets.VAENN import VAENN
 from src.support.focal_loss import FocalLoss
 from src.support.utils import get_base_dir, compute_threshold
 
@@ -14,9 +14,9 @@ utils.seed_everything(1) #seed
 
 input_size = 54 #27 mqtt #44 nidd # 54 cicids
 epochs_vae = 50
-epochs_miv = 5
+epochs_miv = 50
 n_thresholds = 9
-gamma = 32
+gamma = 128
 dataset_name = "cicids"
 
 

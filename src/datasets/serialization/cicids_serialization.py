@@ -29,7 +29,7 @@ ddos_dataframe, slowdos_dataframe = utils.divideDataFrame(dataframe)
 slowdos_dataframe[" Label"] = slowdos_dataframe[" Label"].replace(2, 1)
 #-----DataFrame-----#
 
-dataset = Cicids.Cicids2017(dataframe, True)
+dataset = cicids.Cicids2017(dataframe, True)
 
 ddos_subset, slowdos_subset = utils.divideDataset(dataset)
 
@@ -53,7 +53,7 @@ x_slowdos = dataset.x[slowdos_subset.indices]
 y_slowdos = dataset.y[slowdos_subset.indices]
 
 x_train_ddos, _, y_train_ddos, _ = utils.splitDataset(x_ddos, y_ddos, 0.7, 0.3)
-slowdos_train, slowdos_test = utils.createCustomSplitSlowDos(dataset, y_slowdos, slowdos_subset.indices, 0.7, 125)
+slowdos_train, slowdos_test = utils.createCustomSplitSlowDos(dataset, y_slowdos, slowdos_subset.indices, 0.7, 5)
 
 ddos_train = TensorDataset(x_train_ddos, y_train_ddos)
 

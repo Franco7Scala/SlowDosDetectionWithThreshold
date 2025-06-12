@@ -11,7 +11,7 @@ import random
 def get_base_dir():
     #return "C:/Users/black/PycharmProjects/SlowDOSEarlyDetection/src/support/files"
     #return "C:/Coding/PyCharm Projects/SlowDOSEarlyDetection/src/support/files"
-    return "/home/scala/projects/SlowDosDetection/data"
+    return "/home/scala/projects/SlowDosDetectionWithThreshold/data"
 
 #-----datasets utils-----#
 def stringLabels(dataFrames: list[pd.DataFrame]) -> list[str]:
