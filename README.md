@@ -1,5 +1,6 @@
 # From One to Many: Few-Shot Deep Ensembles for Slow DoS Attack Detection
 
+[![Paper](https://img.shields.io/badge/Paper-ECML_PKDD-brightgreen.svg)](https://doi.org/10.1007/978-3-032-19099-4_33)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains the code and resources for the research paper "From One to Many: Few-Shot Deep Ensembles for Slow DoS Attack Detection". The proposed $MoAE^{2}$ (Mixture of Autoencoder Experts) framework tackles the challenge of detecting stealthy, low-rate Denial-of-Service (DoS) attacks by integrating unsupervised and supervised learning under label-scarce conditions.
